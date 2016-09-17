@@ -10,6 +10,7 @@ LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
 
   $scope.checkNumberOfItems = function () {
+
       var arrayOfItems = $scope.menu.split(',');
       if (arrayOfItems.length <= 3) {
         $scope.message = "Enjoy!";
